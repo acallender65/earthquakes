@@ -1,3 +1,8 @@
+import json
+from pathlib import Path
+
+import requests
+
 from datetime import date
 
 import matplotlib.pyplot as plt
@@ -61,4 +66,3 @@ quakes = get_data()['features']
 # numbers rather than integers, which is what we would prefer!
 plot_number_per_year(quakes)
 plt.clf()  # This clears the figure, so that we don't overlay the two plots
-plot_average_magnitude_per_year(quakes)
