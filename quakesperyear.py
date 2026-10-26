@@ -5,6 +5,8 @@ import requests
 
 from datetime import date
 
+from _utils import Earthquake, EQDataset, read_cli_args
+
 import matplotlib.pyplot as plt
 
 
